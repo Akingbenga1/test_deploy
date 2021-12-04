@@ -16,6 +16,7 @@ var Game = require('./models/game');
                 console.log(err)
             })
         });
+
         app.post('/api/games', (req, res) => {
             let myGame = new Game(req.body)
             myGame.save()
